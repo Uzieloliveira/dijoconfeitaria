@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site sobre confeitaria</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+     <img  id="imagem_banner" src="img/cake_box_tendencia_confeitaria_3.jpg" alt="">
+    <div class="banner flex_Column">
+         
+        <div class="logo flex_Column"><img src="img/logo.png" alt=""></div>
+
+        <div class="header">
+            <div class="menu flex">
+                <ul class="flex">
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li class="hover_Sub">
+                        <a href="">Cardápio</a>
+                        <div class="sub_menu_cardapio flex">
+                            <a href="">bolos</a>
+                            <a href="">docinhos</a>
+                            <a href="">chocolates</a>
+                            <a href="">salgados</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#favoritos">Favoritos</a>
+                    </li>
+                    <li>
+                        <a href="#sobre">Sobre Nós</a>
+                    </li>
+                    <li>
+                        <a href="#mais_Vendidos">Mais Vendidos</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="pesquisa flex">
+                <div class="social_media flex">
+                    <li>
+                        <a href="https://wa.me/5547988469235"><i class="fa-brands fa-whatsapp"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/dijo_confeitaria_artesanal/"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/dijoconfeitariaartesanal"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#local"><i class="fa-solid fa-location-dot"></i></a>
+                    </li>
+                </div>
+                <input id="search" placeholder="Digite o que você procura" type="text">
+                <button class="botao_Pesquisa flex" onclick="print_Result()"><i class="fa-solid fa-magnifying-glass"></i></button>
+              
+            </div>
+           
+        </div>
+        <div class="titulo flex_Column">Bolos e Chocolates para Cada Ocasião</div>
+        <div class="sub_titulo">Feitos com carinho, perfeitos para presentear ou adoçar seu dia.</div>
+        <button><a href="#orcamento">Fazer um orçamento</a></button>
+    </div>
+
+    <!-- FAVORITOS -->
+    <h2 class="favoritos_title flex_Column">Nossos Favoritos</h2>
+   <div class="favoritos">
+    <div class="card flex_Column">
+          <div class="espaco_Img"><img src="img/bolo.jpeg" alt=""></div>
+        <h2>Bolo de Festa</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, libero? Nobis, omnis quod.</p>
+    </div>
+
+    <div class="card flex_Column">
+          <div class="espaco_Img"><img src="img/bolo.jpeg" alt=""></div>
+        <h2>Bolo de Festa</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, libero? Nobis, omnis quod.</p>
+    </div>
+
+    <div class="card flex_Column">
+          <div class="espaco_Img"><img src="img/bolo.jpeg" alt=""></div>
+        <h2>Bolo de Festa</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, libero? Nobis, omnis quod.</p>
+    </div>
+
+    <div class="card flex_Column">
+          <div class="espaco_Img"><img src="img/bolo.jpeg" alt=""></div>
+        <h2>Bolo de Festa</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, libero? Nobis, omnis quod.</p>
+    </div>
+
+   </div>
+
+
+    <div class="mapa">      
+        <h2 id="local">Localização<i class="fa-solid fa-location-dot"></i></h2>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1786.9505369321616!2d-49.08091694725386!3d-26.394383497132456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94de97012f4c6e7d%3A0xc608ee079cb748f8!2sR.%20Duque%20de%20Caxias%2C%20292%2C%20Schroeder%20-%20SC%2C%2089275-000!5e0!3m2!1spt-BR!2sbr!4v1747083120057!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <footer>
+        <div class="rodape">
+            <div class="social_midia">
+                <ul>
+                    <li><a href="">Whatsapp</a></li>
+                    <li><a href="">Instagran</a></li>
+                    <li><a href="">Facebook</a></li>
+                     <li><a href="">Localização</a></li>
+                </ul>
+            </div>
+            <div class="navegation">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Cardápio</a></li>
+                    <li><a href="">Favoritos</a></li>
+                    <li><a href="">Sobre Nós</a></li>
+                    <li><a href="">Mais Vendidos</a></li>
+                </ul>
+            </div>
+            <div class="endereco">
+                <p>
+                    Email: dijoconfeitaria@gmail.com
+                </p>
+                <p>
+                    Endereço: Rua Santa Cararina, Schroeder-248/ CEP 89275-000
+                </p>
+            </div>
+        </div>
+        <div class="direitos">
+            <p>Dijo confeitaria &copy; Todos os direitos reservados 2025</p>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
