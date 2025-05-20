@@ -219,7 +219,6 @@ button:hover{
     height: 100px;
     position: relative;
     overflow: hidden;
- 
 }
 
 .favoritos .card .espaco_Img img{
@@ -232,13 +231,90 @@ button:hover{
 .favoritos .card p, .favoritos .card h2{
     font-size: 1rem;
     font-family: "Raleway", sans-serif;
-     padding: 5px;
+    padding: 5px;
+}
+/* ESPAÇO PARA APRESENTAÇÃO DOS PRODUTOS */
+
+.all_Prod{
+    height: auto;
+    background-color: #ffffff;
+    margin-top: 2%;
 }
 
-.favoritos .card p{
-   
+.all_Prod h2{
+    padding: 10px;
+    font-family: "Raleway", sans-serif;
+    background-color: #fce8e7;
+    color: #ad6666;
+    border-bottom: solid 2px #42353134;
 }
 
+.all_Prod .cardBox{
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.all_Prod .cardBox .card{
+   height: 200px;
+   border: solid 1px #3b2c2744;
+   width: 15%;
+   min-width: 150px;
+   position: relative;
+   transition: .5s;
+   display: flex;
+   justify-content: center;
+   overflow: hidden;
+   border-radius: 5px;
+}
+
+.all_Prod .cardBox .card img{
+    height: 100%;
+    transition: .2s;
+}
+
+.all_Prod .cardBox .card .conteudoCard{
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition:.2s;
+}
+
+.all_Prod .cardBox .card .conteudoCard button{
+   width: 100%;
+}
+
+.all_Prod .cardBox .card .conteudoCard p{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: .8rem;
+   margin-bottom: 5px;
+   color: #2d2020;
+}
+
+/* EVENTO PARA MOSTRAR CONTEUDO DO CARD */
+.all_Prod .cardBox .card:hover .conteudoCard{
+   height: 100%;
+   padding: 5px;
+}
+
+.all_Prod .cardBox .card:hover img{
+   opacity: .5;
+}
+
+.all_Prod .cardBox .card:hover{
+    box-shadow: 1px 2px 10px #ccc;
+}
+
+/* LOCALIZAÇÃO */
 .mapa{
     background-color: white;
 }
