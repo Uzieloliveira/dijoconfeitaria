@@ -237,7 +237,7 @@ button:hover{
 
 .all_Prod{
     height: auto;
-    background-color: #ffffff;
+    background-color: #ffebec;;
     margin-top: 2%;
 }
 
@@ -258,12 +258,13 @@ button:hover{
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
+    background-color: white;
 }
 
 .all_Prod .cardBox .card{
    height: 200px;
    border: solid 1px #3b2c2744;
-   width: 15%;
+   width: 25%;
    min-width: 150px;
    position: relative;
    transition: .5s;
@@ -280,13 +281,13 @@ button:hover{
 
 .all_Prod .cardBox .card .conteudoCard{
     position: absolute;
-    bottom: 0;
-    height: 0;
-    overflow: hidden;
+    height: 90%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    transition:.2s;
+    transition:.5s;
+    margin-top: 100%;
+    padding: 5px;
 }
 
 .all_Prod .cardBox .card .conteudoCard button{
@@ -297,13 +298,13 @@ button:hover{
    font-family: Arial, Helvetica, sans-serif;
    font-size: .8rem;
    margin-bottom: 5px;
-   color: #2d2020;
+   color: #3c3939;
+   font-weight: 600;
 }
 
 /* EVENTO PARA MOSTRAR CONTEUDO DO CARD */
 .all_Prod .cardBox .card:hover .conteudoCard{
-   height: 100%;
-   padding: 5px;
+   margin-top: 0;
 }
 
 .all_Prod .cardBox .card:hover img{
