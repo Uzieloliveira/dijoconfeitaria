@@ -2,22 +2,47 @@
     {
         "descricao":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
         "end_Img": "./img/brigadeiro.jpg",
-        "tipo":"Brigadeiro"
+        "tipo":"docinho"
     },
      {
         "descricao":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
         "end_Img": "./img/miniBolos.jpeg",
-        "tipo":"bolo"
+        "tipo":"Bolo"
     },
      {
         "descricao":"Esse é apenas um teste para saber se os dados estão sendo transporatos de forma correta",
         "end_Img": "./img/docinhos.jpg",
-        "tipo":"Brigadeiro"
+        "tipo":"docinho"
     },
      {
         "descricao":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
         "end_Img": "./img/boloAniversario.webp",
+        "tipo":"Bolo"
+    },
+      {
+        "descricao":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+        "end_Img": "./img/boloConfets.jpg",
+        "tipo":"Bolo"
+    },
+     {
+        "descricao":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+        "end_Img": "./img/coração rosa.jpeg",
+        "tipo":"chocolate"
+    },
+     {
+        "descricao":"Esse é apenas um teste para saber se os dados estão sendo transporatos de forma correta",
+        "end_Img": "./img/bolo.jpeg",
         "tipo":"bolo"
+    },
+     {
+        "descricao":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+        "end_Img": "./img/bolo trator.jpg",
+        "tipo":"bolo"
+    },
+     {
+        "descricao":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+        "end_Img": "./img/coração.jpeg",
+        "tipo":"chocolate"
     }
 
 ]

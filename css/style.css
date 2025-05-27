@@ -70,37 +70,17 @@ body{
 }
 
 .header .pesquisa{
-    width: 60%;
     height: 60%;
-}
-
-.header .pesquisa input{
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-style: none;
-    outline: none;
-    font-size: .9rem;
-    width: 100%;
-    margin-left: 10%;
-    padding-left: 5px;
-}
-
-.botao_Pesquisa{
-    font-size: .9rem;
-    padding: 10px;
-    border-radius: 0;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    width: 10%;
-    align-items: center;
-    justify-content: center;
+    width: 25%;
+    display: flex;
 }
 
 .pesquisa .social_media{
     align-items: center;
     justify-content: space-between;
     font-size: 1rem;
-    width: 30%;
+    width: 100%;
+   
 }
 
 .pesquisa .social_media li a i{
@@ -111,7 +91,7 @@ body{
     background-color: white;
     height: 20px;
     border-bottom: solid 2px #a83a4757;
-    width: 50%;
+    width: 80%;
 }
 
 .header .menu ul{
@@ -182,7 +162,6 @@ button a{
     text-decoration: none;
 }
 
-
 button:hover{
     background-color: #c55d66;
 }
@@ -237,7 +216,6 @@ button:hover{
 
 .all_Prod{
     height: auto;
-    background-color: #ffebec;;
     margin-top: 2%;
 }
 
@@ -255,13 +233,14 @@ button:hover{
     margin: 0 auto;
     padding: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 12%;
     background-color: white;
 }
 
 .all_Prod .cardBox .card{
+    margin-top: 50px;
    height: 200px;
    border: solid 1px #3b2c2744;
    width: 25%;
@@ -300,6 +279,59 @@ button:hover{
    margin-bottom: 5px;
    color: #3c3939;
    font-weight: 600;
+}
+
+
+.all_Prod .busca{
+    display: flex;
+    width: 100%;
+}
+
+.all_Prod input{
+    width: 100%;
+    padding: 5px 5px 5px 10px;
+    outline: none;
+}
+
+.botao_Pesquisa{
+    font-size: .8rem;
+    border-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* TELA DE CARREGAMENTO */
+.loading-screen {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: none;
+}
+
+/* Spinner animado */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #ffffff33;
+  border-top: 4px solid #ad6666;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Texto */
+.loading-screen p {
+  font-size: 1.2rem;
+  opacity: 0.8;
 }
 
 /* EVENTO PARA MOSTRAR CONTEUDO DO CARD */
