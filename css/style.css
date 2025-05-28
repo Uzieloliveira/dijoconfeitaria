@@ -28,7 +28,6 @@ ul li a{
 body{
     height: 100Vh;
     margin: 0 auto;
-    background-color: #ffebec;
     overflow:  hidden auto;
 }
 
@@ -73,6 +72,7 @@ body{
     height: 60%;
     width: 25%;
     display: flex;
+    margin-top: 2%;
 }
 
 .pesquisa .social_media{
@@ -284,13 +284,15 @@ button:hover{
 
 .all_Prod .busca{
     display: flex;
-    width: 100%;
+    width: 91.5%;
+    margin: 2% auto;
 }
 
 .all_Prod input{
     width: 100%;
     padding: 5px 5px 5px 10px;
     outline: none;
+    border: solid 1px #ccc;
 }
 
 .botao_Pesquisa{
@@ -300,6 +302,22 @@ button:hover{
     border-bottom-right-radius: 5px;
     align-items: center;
     justify-content: center;
+}
+
+#msgElse{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+}
+
+#msgElse i{
+   font-size: 2rem;
+   color: #a35959;
+   padding: 10px;
 }
 
 /* TELA DE CARREGAMENTO */

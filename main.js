@@ -41,26 +41,37 @@ function limpar(){
 }
 
 function pesquisa(){
-    
-    const divCard = document.querySelector(".cardBox")
-    const pesquisa = document.querySelector("#search").value
+  
+    const pesquisa = document.querySelector("#search").value.toLowerCase();
     
     fetch("./dados.json").then((response) => {
         response.json().then((dados) => {
-            dados.map((dado) => {
-                  
-                    if(dado.tipo == pesquisa){
-                        divCard.innerHTML += `<div class="card">
-                        <img src="${dado.end_Img}" alt="">
-                        <div class="conteudoCard">
-                            <p>${dado.descricao}</p>
-                            <button> ver mais detalhes></button>
-                        </div>
-                        </div>`
-                    }
+           const resultado = dados.filter((dado) => {
+                return dado.tipo.toLowerCase().includes(pesquisa);
             })
+                const divCard = document.querySelector(".cardBox")
+
+                if (resultado.length > 0) {
+                    resultado.forEach((resultado) => {
+                        divCard.innerHTML += `<div class="card">
+                         <img src="${resultado.end_Img}" alt="">
+                            <div class="conteudoCard">
+                                <p>${resultado.descricao}</p>
+                                <button> ver mais detalhes></button>
+                            </div>
+                        </div>`
+                    })
+                } else {
+                     divCard.innerHTML = `<p id="msgElse"><i class="fa-solid fa-circle-xmark"></i>Nenhum resultado encontrado</p>`;
+                }
         })
     })
 }
+
+document.getElementById("search").addEventListener("keypress", (e) => {
+  if (e.key === "Enter") {
+    limpar();
+  }
+});
 
 carregar();

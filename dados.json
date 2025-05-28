@@ -2,47 +2,47 @@
     {
         "descricao":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
         "end_Img": "./img/brigadeiro.jpg",
-        "tipo":"docinho"
+        "tipo":"Docinho brigadeiro docinhos beijinho"
     },
      {
         "descricao":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
         "end_Img": "./img/miniBolos.jpeg",
-        "tipo":"Bolo"
+        "tipo":"Bolo de chocolate com cobertura"
     },
      {
         "descricao":"Esse é apenas um teste para saber se os dados estão sendo transporatos de forma correta",
         "end_Img": "./img/docinhos.jpg",
-        "tipo":"docinho"
+        "tipo":"Docinho brigadeiro docinhos beijinho "
     },
      {
         "descricao":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
         "end_Img": "./img/boloAniversario.webp",
-        "tipo":"Bolo"
+        "tipo":"Bolo de chocolate"
     },
       {
         "descricao":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
         "end_Img": "./img/boloConfets.jpg",
-        "tipo":"Bolo"
+        "tipo":"Bolo de chocolate com confetis coloridos"
     },
      {
         "descricao":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
         "end_Img": "./img/coração rosa.jpeg",
-        "tipo":"chocolate"
+        "tipo":"chocolate em formato de coração"
     },
      {
         "descricao":"Esse é apenas um teste para saber se os dados estão sendo transporatos de forma correta",
         "end_Img": "./img/bolo.jpeg",
-        "tipo":"bolo"
+        "tipo":"Bolo de chocolate"
     },
      {
         "descricao":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
         "end_Img": "./img/bolo trator.jpg",
-        "tipo":"bolo"
+        "tipo":"Bolo bolo de festa"
     },
      {
         "descricao":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
         "end_Img": "./img/coração.jpeg",
-        "tipo":"chocolate"
+        "tipo":"chocolate em formato de coração"
     }
 
 ]
