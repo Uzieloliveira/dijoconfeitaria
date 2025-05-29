@@ -393,7 +393,7 @@ button:hover{
 
 /* LOCALIZAÇÃO */
 .mapa{
-    background-color: white;
+    width: 100%;
 }
 
 #local{
@@ -421,8 +421,8 @@ footer{
     justify-content: space-between;
     height: 30%;
     margin-top: 5%;
-    background-color: white;
-    padding-top: 10px;
+    background-color:#ffe5e5;
+    padding: 2%;
 }
 
 footer .rodape{
