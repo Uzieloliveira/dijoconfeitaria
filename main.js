@@ -40,9 +40,19 @@ function limpar(){
 
 }
 
+const input = document.getElementById('search');
+
+input.addEventListener('input', () => {
+  const valor = input.value;
+  const palavras = valor.split(' ');
+  palavras[0] = palavras[0].charAt(0).toUpperCase() + palavras[0].slice(1).toLowerCase();
+  input.value = palavras.join(' ');
+});
+
 function pesquisa(){
   
     const pesquisa = document.querySelector("#search").value.toLowerCase();
+
     
     fetch("./dados.json").then((response) => {
         response.json().then((dados) => {
@@ -51,15 +61,15 @@ function pesquisa(){
             })
                 const divCard = document.querySelector(".cardBox")
 
-                if (resultado.length > 0) {
-                    resultado.forEach((resultado) => {
+                if (resultado.length > 0){
+                    resultado.forEach((resultado) =>{
                         divCard.innerHTML += `<div class="card">
-                         <img src="${resultado.end_Img}" alt="">
-                            <div class="conteudoCard">
-                                <p>${resultado.descricao}</p>
-                                <button> ver mais detalhes></button>
-                            </div>
-                        </div>`
+                            <img src="${resultado.end_Img}" alt="">
+                                <div class="conteudoCard">
+                                    <p>${resultado.descricao}</p>
+                                    <button> ver mais detalhes></button>
+                                </div>
+                            </div>`
                     })
                 } else {
                      divCard.innerHTML = `<p id="msgElse"><i class="fa-solid fa-circle-xmark"></i>Nenhum resultado encontrado</p>`;
