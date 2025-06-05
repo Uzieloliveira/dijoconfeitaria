@@ -37,14 +37,14 @@ body{
 /* APRESENTAÇÃO INICIAL */
 
 .logo{  
-    max-width:100%;
+    width:100%;
     border: solid 1px white;
-    height: 30%;
+    height: auto;
     border-radius: 10px
 }
 
 .logo img{  
-   width: 25%;
+   width: 20%;
 }
 
 #imagem_banner{
@@ -55,11 +55,13 @@ body{
 }
 
 .banner{
-    height: 99vh;
-    padding: 10px 10px 5% 10px;
+    height: 100vh;
+    width: 90%;
+    margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     justify-content: space-between;
+    padding-top: 20px;
     color: #3f3e44;
 }
 
@@ -68,7 +70,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 5%;
+    gap: 20%;
+    flex-direction: column;
 }
 
 .header .pesquisa{
@@ -82,7 +85,6 @@ body{
     justify-content: space-between;
     font-size: 1rem;
     width: 100%;
-   
 }
 
 .pesquisa .social_media li a i{
@@ -93,7 +95,7 @@ body{
     background-color: white;
     height: 20px;
     border-bottom: solid 2px #a83a4757;
-    width: 80%;
+    width: 100%;
 }
 
 .header .menu ul{
@@ -135,7 +137,7 @@ body{
 }
 
 .titulo{
-    font-size: 5.5vw;
+    font-size: 5vw;
     font-weight: 400;
     width: 100%;
     font-family: "Raleway", sans-serif;
@@ -173,11 +175,11 @@ button:hover{
 .favoritos_title{
     width: 100%;
     background-color: #ffebec;
-    height: 15%;
-    font-size: 3vw;
+    height: 10%;
+    font-size: 2.5vw;
     font-family: "Raleway", sans-serif;
     color: #3b2c27;
-    margin-bottom: 20px;
+    margin: 2% 0 2% 0;
 }
 
 .favoritos{
@@ -465,7 +467,7 @@ footer{
     justify-content: space-between;
     height: 30%;
     margin-top: 5%;
-    background-color:#ffe5e5;
+    background-color:#f9f5f5;
     padding: 2%;
 }
 
@@ -487,12 +489,11 @@ footer .rodape .social_midia ul, footer .rodape .navegation ul{
     width: 100%;
     display: flex;
     flex-direction: column;
-    color: black;
     gap: 10px;
 }
 
 footer .rodape .social_midia ul li a, footer .rodape .navegation ul li a{
-    color: black;
+    color: #65230b;
     font-family: Arial, Helvetica, sans-serif;
     font-size: .8rem;
 }
@@ -505,6 +506,7 @@ footer .rodape .endereco{
     gap: 20%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: .8rem;
+    color: #65230b;
 }
 
 .direitos{
@@ -516,4 +518,5 @@ footer .rodape .endereco{
     font-family: Arial, Helvetica, sans-serif;
     font-size: .8rem;
     padding: 10px;
+    color: #65230b;
 }

@@ -9,7 +9,7 @@
         "descricao":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
         "end_Img": "./img/miniBolos.jpeg",
         "tipo":"Bolo de chocolate com cobertura",
-        "vendas": 9
+        "vendas": 2
     },
      {
         "descricao":"Esse é apenas um teste para saber se os dados estão sendo transporatos de forma correta",
