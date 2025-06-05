@@ -16,6 +16,25 @@ function carregar(){
     })
 }
 
+function carregarMaisVendidos(){
+    const divMaisVendas = document.querySelector(".boxVenda")
+
+    fetch("./dados.json").then((response)=> {
+        response.json().then((dados)=> {
+            dados.map((dado) => {
+                if(dado.vendas > 8){
+                    divMaisVendas.innerHTML += `
+                     <div class="cardMaisVendidos">
+                <img src="${dado.end_Img}" alt="">
+                <p>${dado.tipo}</p>
+        </div>
+                    `
+                }
+            })
+        })
+    })
+}
+
 function mostrarLoading(){
     document.querySelector(".loading-screen").style.display = "flex";
 }
@@ -85,3 +104,4 @@ document.getElementById("search").addEventListener("keypress", (e) => {
 });
 
 carregar();
+carregarMaisVendidos()

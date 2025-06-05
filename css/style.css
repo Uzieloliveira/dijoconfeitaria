@@ -25,10 +25,13 @@ ul li a{
     color: #c55d66;
 }
 
+html{
+    scroll-behavior: smooth; 
+}
+
 body{
-    height: 100Vh;
+    height: 100vh;
     margin: 0 auto;
-    overflow:  hidden auto;
 }
 
 /* APRESENTAÇÃO INICIAL */
@@ -363,6 +366,47 @@ button:hover{
     box-shadow: 1px 2px 10px #ccc;
 }
 
+/* Mais vendidos */
+
+#maisVendidos{
+    width: 90%;
+    margin: 2% auto;
+}
+
+#maisVendidos img{
+   width: 100%;
+}
+
+#maisVendidos .boxVenda{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+
+.cardMaisVendidos{
+    height: 280px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    border: solid 2px #ad6666;
+    border-radius: 5px;
+}
+
+.cardMaisVendidos p{
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #ad6666;
+}
+
 /* ABA SOBRE */
 
 #sobre{
@@ -370,7 +414,7 @@ button:hover{
     margin: 5% auto; 
 }
 
-#sobre h2{
+#sobre h2, #maisVendidos h2{
     font-family: "Raleway", sans-serif;
     font-size: 2rem;
     padding: 10px;

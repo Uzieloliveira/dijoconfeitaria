@@ -2,48 +2,56 @@
     {
         "descricao":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
         "end_Img": "./img/brigadeiro.jpg",
-        "tipo":"Docinho brigadeiro docinhos beijinho"
+        "tipo":"Docinho brigadeiro docinhos beijinho",
+        "vendas": 9
     },
      {
         "descricao":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
         "end_Img": "./img/miniBolos.jpeg",
-        "tipo":"Bolo de chocolate com cobertura"
+        "tipo":"Bolo de chocolate com cobertura",
+        "vendas": 9
     },
      {
         "descricao":"Esse é apenas um teste para saber se os dados estão sendo transporatos de forma correta",
         "end_Img": "./img/docinhos.jpg",
-        "tipo":"Docinho brigadeiro docinhos beijinho "
+        "tipo":"Docinho brigadeiro docinhos beijinho ",
+        "vendas": 10
     },
      {
         "descricao":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
         "end_Img": "./img/boloAniversario.webp",
-        "tipo":"Bolo de chocolate"
+        "tipo":"Bolo de chocolate",
+        "vendas": 10
     },
       {
         "descricao":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
         "end_Img": "./img/boloConfets.jpg",
-        "tipo":"Bolo de chocolate com confetis coloridos"
+        "tipo":"Bolo de chocolate com confetis coloridos",
+        "vendas": 12
     },
      {
         "descricao":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
         "end_Img": "./img/coração rosa.jpeg",
-        "tipo":"chocolate em formato de coração"
+        "tipo":"chocolate em formato de coração",
+        "vendas": 10
     },
      {
         "descricao":"Esse é apenas um teste para saber se os dados estão sendo transporatos de forma correta",
         "end_Img": "./img/bolo.jpeg",
-        "tipo":"Bolo de chocolate"
+        "tipo":"Bolo de chocolate",
+        "vendas": 4
     },
      {
         "descricao":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
         "end_Img": "./img/bolo trator.jpg",
-        "tipo":"Bolo bolo de festa"
+        "tipo":"Bolo bolo de festa",
+        "vendas": 6
     },
      {
         "descricao":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
         "end_Img": "./img/coração.jpeg",
-        "tipo":"chocolate em formato de coração"
+        "tipo":"chocolate em formato de coração",
+        "vendas": 5
     }
-
 ]
    
