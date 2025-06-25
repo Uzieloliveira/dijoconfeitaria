@@ -627,5 +627,19 @@ footer .rodape .endereco{
     .all_Prod .cardBox .card, .cardMaisVendidos{
         width: 100%;
     }
+
+    .favoritos_title{
+        font-size: 2rem;
+    }
+
+    .favoritos{
+        width: 200%;
+        overflow-x: auto;
+        width: auto;
+    }
+
+    .cardMaisVendidos img{
+        max-height: 90%;
+    }
 }
 
