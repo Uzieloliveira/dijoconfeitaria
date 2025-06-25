@@ -103,5 +103,31 @@ document.getElementById("search").addEventListener("keypress", (e) => {
   }
 });
 
+
+
+// const iconeMenu = document.getElementById("menuHamburguer")
+
+// iconeMenu.addEventListener("click", ()=>{
+
+//     const check = document.getElementById("chec")
+    
+//     if (check.checked){ 
+//         document.querySelector(".menu").style = "display: flex"
+//     }
+// })
+
+// const iconefechar = document.getElementById("fecharMenu")
+
+// iconefechar.addEventListener("click", ()=>{
+
+//     const check = document.getElementById("checMenu")
+    
+//     if (check.checked){ 
+//         document.querySelector(".menu").style = "display: none"
+//     }
+// })
+  
+
+
 carregar();
 carregarMaisVendidos()

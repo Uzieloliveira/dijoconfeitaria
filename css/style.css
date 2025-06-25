@@ -60,9 +60,9 @@ body{
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    justify-content: space-between;
-    padding-top: 20px;
     color: #3f3e44;
+    gap: 5%;
+    padding-top: 10px;
 }
 
 .header{
@@ -96,6 +96,10 @@ body{
     height: 20px;
     border-bottom: solid 2px #a83a4757;
     width: 100%;
+}
+
+.header .fa-bars, .header .fa-x{
+   display: none;
 }
 
 .header .menu ul{
@@ -146,7 +150,7 @@ body{
 }
 
 .sub_titulo{
-    font-size: 1.5vw;
+    font-size: 2vw;
     width: 80%;
 }
 
@@ -157,7 +161,7 @@ button{
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
-    width: 20%;
+    width: auto;
 }
 
 button a{
@@ -206,8 +210,6 @@ button:hover{
 
 .favoritos .card .espaco_Img img{
     width: 100%;
-    position: absolute;
-    top: -150%;
     opacity: .6;
 }
 
@@ -369,7 +371,6 @@ button:hover{
 }
 
 /* Mais vendidos */
-
 #maisVendidos{
     width: 90%;
     margin: 2% auto;
@@ -436,6 +437,18 @@ button:hover{
     font-family: "Raleway", sans-serif;
 }
 
+/* CARDÁPIO */
+.cardapio h2{
+    margin-bottom: 20px;
+}
+
+.cardapio .img{
+    width: 100%;
+}
+
+.cardapio .img img{
+    width: 50%;
+}
 
 /* LOCALIZAÇÃO */
 .mapa{
@@ -520,3 +533,99 @@ footer .rodape .endereco{
     padding: 10px;
     color: #65230b;
 }
+
+@media (max-width: 960px){
+   .banner{
+        max-height: 350px;
+   } 
+    
+}
+
+@media (max-width: 400px){
+
+    .body{
+        margin: 0;
+    }
+
+    .header .fa-bars, .menu .fa-x{
+        font-size: 2.3rem;
+        display: flex;
+        color: #3b2c27;
+    }
+
+    .menu .fa-x{
+        position: absolute;
+        right: 15px;
+        top: 10px;
+    }
+
+    .header{
+        flex-direction: row;
+    }
+
+    .menu{
+        height: 100%;
+        z-index: 1;
+        position: fixed;
+        padding: 0;
+        margin: 0;
+        top: 0;
+        left: 0;
+        display: none;
+        background-color: #ebcaca;
+    }
+
+    .menu ul{
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        height: 50%;
+        margin: auto 0;
+    }
+
+    .menu ul li{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        background-color: #65230b68;
+    }
+
+    #chec:checked ~ .menu{
+        display: flex;
+    } 
+
+    .header .menu ul li a{
+        font-size: 1.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+    .banner{
+        height: 200px;
+        justify-content: space-between;
+    }
+
+    #sobre{
+    display: none;
+    }
+
+    .titulo, .sub_titulo{
+        display: none;
+    }
+
+    .header .pesquisa{
+        width: 100%;
+    }
+
+    .social_media li a i{
+        font-size: 25px;
+    }
+
+    .all_Prod .cardBox .card, .cardMaisVendidos{
+        width: 100%;
+    }
+}
+
