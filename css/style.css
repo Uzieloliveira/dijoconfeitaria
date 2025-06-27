@@ -186,7 +186,7 @@ button:hover{
     margin: 2% 0 2% 0;
 }
 
-.favoritos{
+.favoritos .cardList{
     height: auto;
     width: 90%;
     margin: 0 auto;
@@ -195,25 +195,25 @@ button:hover{
     justify-content: space-between;
 }
 
-.favoritos .card{
+.favoritos .cardList .card{
     width: 20%;
     background-color: white;
     box-shadow: 2px 5px 10px #ad666670;
 }
 
-.favoritos .card .espaco_Img{
+.favoritos .cardList .card .espaco_Img{
     width: 100%;
     height: 100px;
     position: relative;
     overflow: hidden;
 }
 
-.favoritos .card .espaco_Img img{
+.favoritos .cardList .card .espaco_Img img{
     width: 100%;
     opacity: .6;
 }
 
-.favoritos .card p, .favoritos .card h2{
+.favoritos .cardList .card p, .favoritos .cardList .card h2{
     font-size: 1rem;
     font-family: "Raleway", sans-serif;
     padding: 5px;
@@ -534,13 +534,6 @@ footer .rodape .endereco{
     color: #65230b;
 }
 
-@media (max-width: 960px){
-   .banner{
-        max-height: 350px;
-   } 
-    
-}
-
 @media (max-width: 400px){
 
     .body{
@@ -608,10 +601,6 @@ footer .rodape .endereco{
         justify-content: space-between;
     }
 
-    #sobre{
-    display: none;
-    }
-
     .titulo, .sub_titulo{
         display: none;
     }
@@ -633,13 +622,37 @@ footer .rodape .endereco{
     }
 
     .favoritos{
-        width: 200%;
-        overflow-x: auto;
-        width: auto;
+      width: 100%;
+    }
+
+    .favoritos .cardList{
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .favoritos .cardList .card{
+      width: 100%;
     }
 
     .cardMaisVendidos img{
         max-height: 90%;
+    }
+
+    #sobre .texto{
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    #sobre .texto p{
+        width: 100%;
+    }
+
+    .rodape{
+        flex-direction: column;
+    }
+
+    .rodape div{
+        width: 100%;
     }
 }
 
